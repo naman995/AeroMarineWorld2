@@ -16,3 +16,24 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+
+function sendMail(event) {
+  event.preventDefault();
+  let parms = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+    phone: document.getElementById("phone").value,
+  };
+  emailjs.send("service_h8edw2d", "template_k5slpjp", parms).then(
+    function (response) {
+      console.log("SUCCESS!", response.status, response.text);
+      alert("Message sent successfully");
+    },
+    function (error) {
+      console.log("FAILED...", error);
+      alert("Message not sent");
+    }
+  );
+}

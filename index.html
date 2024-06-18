@@ -6,24 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/form/css/form.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "XvdyoYeG-Gp3xXWN2",
+            });
+        })();
+    </script>
+    <script src="./assets/index.js"></script>
     <title>AeroMarineWorld</title>
 </head>
 
 <body class="bg-[#fffff2]">
     <section class="h-auto  bg-[#fffff2]">
-        <header class=" bg-[#204116]">
+        <header class="bg-[#204116]">
             <nav class="
-                  flex flex-wrap
-                  items-center
-                  justify-between
-                  w-full
-                  md:py-0
-                  px-4
-                  text-base text-[#fffff2]
-                  
-                ">
+                          flex flex-wrap
+                          items-center
+                          justify-between
+                          w-full
+                          md:py-0
+                          px-4
+                          text-base text-[#fffff2]
+                        ">
                 <div>
                     <a href="#">
                         <!-- logo -->
@@ -38,37 +47,39 @@
 
                 <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
                     <ul class="
-                    my-2
-                      pt-4
-                      text-base text-[#fffff2]
-                      md:flex
-                      md:justify-between 
-                      md:pt-0">
+                              my-2
+                              pt-4
+                              text-base text-[#fffff2]
+                              md:flex
+                              md:justify-between 
+                              md:pt-0">
                         <li>
-                            <a class="md:p-4 py-2 block " href="#">Home</a>
+                            <a class="md:p-4 py-2 block" href="#">Home</a>
                         </li>
                         <li>
-                            <a class="md:p-4 py-2 block " href="./avaiation-spares.html">Aviation Spares</a>
+                            <a class="md:p-4 py-2 block" href="./avaiation-spares.html">Aviation Spares</a>
                         </li>
                         <li>
-                            <a class="md:p-4 py-2 block " href="./avaiation-consumables.html">Aviation consumables</a>
+                            <a class="md:p-4 py-2 block" href="./avaiation-consumables.html">Aviation Consumables</a>
                         </li>
                         <li>
-                            <a class="md:p-4 py-2 block " href="./custom-project.html">Custom Project</a>
+                            <a class="md:p-4 py-2 block" href="./custom-project.html">Custom Project</a>
                         </li>
                         <li>
-                            <a class="md:p-3 py-0  block rounded-3xl bg-[#fffff2] text-[#204116] "
+                            <a class="md:p-3 py-0 block rounded-3xl bg-[#fffff2] text-[#204116] px-2 w-[7.5rem] lg:w-full"
                                 href="#">DgCalifornia</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
+
         <!-- NavBar End Here -->
         <!-- HeroSection -->
         <div>
             <!-- <button class="absolute text-[#204116] p-3 rounded-2xl text-2xl top-[20%] left-[2%] lg:top-[60%] lg:left-[10%] bg-yellow-500 ">Contact Us</button> -->
-            <img class="h-[50vh] lg:w-full h-auto" src="./assets/Img/Home/regulatory complience.jpg" alt="">
+            <img class="h-[50vh] hidden lg:w-full lg:block  h-auto" src="./assets/Img/Home/regulatory complience.jpg" alt="">
+            <img class="h-[50vh] block lg:hidden  h-auto" src="./assets/Img/Home/mobile-hero-section.png" alt="">
         </div>
         <div class=" px-[5%] lg:px-[20%] mt-4 lg:mt-10 text-center text-[#204116] bg-[#fffff2]">
             <p class="text-center text-3xl font-[500]">HAZARDOUS MATERIAL AND DANGEROUS GOODS SERVICES</p>
@@ -88,12 +99,10 @@
     <section>
         <div
             class="mt-10 mb-10 flex flex-col lg:w-[100vw] lg:auto lg:flex lg:flex-row justify-center items-center bg-[#fffff2]">
-
-            <img src="img/shape.png" class="square" alt="" />
             <div class="form w-[90%] lg:w-[70%] lg:[70%]">
                 <div class="contact-info">
-                    <h3 class="title text-xl lg:text-3xl">Let's get in touch</h3>
-                    <h3 class="title text-base lg:text-2xl">MAILING ADDRESS</h3>
+                    <h3 class="title text-xl lg:text-2xl">Let's get in touch</h3>
+                    <h3 class="title text-base lg:text-xl">MAILING ADDRESS</h3>
                     <p class="text text-base lg:text-xl">
                         11040 Bollinger Canyon Road, Suite E-150, San Ramon, California 94582, United States
                     </p>
@@ -101,29 +110,30 @@
                     <div class="info text-base lg:text-xl">
                         <div class="information text-xl">
                             <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
-                            <p class="text-base"> +1 (408) 348-5265 (Sales)</p>
+                            <p class="text-base lg:text-xl text-gray-800">+1 (408) 348-5265 (Sales)</p>
                         </div>
                         <div class="information text-base lg:text-xl">
                             <i class="fas fa-envelope"></i> &nbsp &nbsp
-                            <p>sales@aeromarineworld.com (for DG and Warehousing Services) <br>
+                            <p class="text-base lg:text-xl text-gray-800">sales@aeromarineworld.com (for DG and
+                                Warehousing Services) <br> <br>
                                 rfq@aeromarineworld.com (for Spares & Consumables inquiries)</p>
                         </div>
 
                     </div>
 
                     <div class="social-media">
-                        <p class="text-base lg:text-xl">Connect with us :</p>
+                        <p class="text-xl">Connect with us :</p>
                         <div class="flex  lg:flex-row">
-                            <a href="#">
+                            <a href="https://www.linkedin.com/company/aeromarineworld">
                                 <img src="./assets/form/icons/linkedin.png" alt="">
                             </a>
-                            <a href="#">
+                            <a href="https://www.facebook.com/people/Dangerous-Goods-Management/100091352434239/">
                                 <img src="./assets/form/icons/facebook.png" alt="" srcset="">
                             </a>
-                            <a href="#">
+                            <a href="https://www.instagram.com/dangerous_goods_management/">
                                 <img src="./assets/form/icons/insta.png" alt="" srcset="">
                             </a>
-                            <a href="#">
+                            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fdgm_new_york">
                                 <img src="./assets/form/icons/x.png" alt="">
                             </a>
                         </div>
@@ -131,30 +141,34 @@
                 </div>
 
                 <div class="contact-form">
-
-                    <form action="index.html" autocomplete="off">
-                        <h3 class="title text-base lg:text-[40px] pb-6">Contact us</h3>
+                    <form autocomplete="off">
+                        <h3 class="title text-xl lg:text-2xl pb-6">Contact us</h3>
                         <div class="input-container ">
-                            <input type="text" name="name" class="input" />
-                            <label for="">Username</label>
-                            <span>Username</span>
+                            <input type="text" id="name" name="name"
+                                class="input h-[50px] lg:h-[65px] pl-[0.45rem] pt-[0.6rem] lg:pt-[1.2rem" />
+                            <label class="text-base lg:text-xl" for="">Full Name</label>
+                            <span class="text-base lg:text-xl">Full Name</span>
                         </div>
                         <div class="input-container ">
-                            <input type="email" name="email" class="input" />
-                            <label for="">Email</label>
-                            <span>Email</span>
+                            <input type="email" id="email" name="email"
+                                class="input h-[50px] lg:h-[65px] pl-[0.45rem] pt-[0.6rem] lg:pt-[1.2rem]" />
+                            <label class="text-base lg:text-xl" for="">Email</label>
+                            <span class="text-base lg:text-xl">Email</span>
                         </div>
                         <div class="input-container ">
-                            <input type="tel" name="phone" class="input" />
-                            <label for="">Phone</label>
-                            <span>Phone</span>
+                            <input type="tel" id="phone" name="phone"
+                                class="input h-[50px] lg:h-[65px] pl-[0.45rem] pt-[0.6rem] lg:pt-[1.2rem]" />
+                            <label class="text-base lg:text-xl" for="">Phone</label>
+                            <span class="text-base lg:text-xl">Phone</span>
                         </div>
                         <div class="input-container textarea">
-                            <textarea name="message" class="input"></textarea>
-                            <label for="">Message</label>
-                            <span>Message</span>
+                            <textarea name="message" id="message"
+                                class="input h-[50px] lg:h-[65px] pl-[0.45rem] pt-[0.6rem] lg:pt-[1.2rem]"></textarea>
+                            <label class="text-base lg:text-xl" for="">Message</label>
+                            <span class="text-base lg:text-xl">Message</span>
                         </div>
-                        <input type="submit" value="Send" class="btn text-2xl" />
+                        <button onclick="sendMail(e)" class="btn   py-[1.2rem] lg:py-[1.2rem] text-xl  lg:text-2xl">
+                            Send </button>
                     </form>
                 </div>
             </div>
@@ -180,7 +194,7 @@
 
                     <ul class="flex justify-center gap-6 mt-8 md:gap-8 sm:justify-start">
                         <li>
-                            <a href="/" rel="noopener noreferrer" target="_blank"
+                            <a href="https://www.facebook.com/people/Dangerous-Goods-Management/100091352434239/" rel="noopener noreferrer" target="_blank"
                                 class="text-[#fffff2] transition hover:text-teal-500/75">
                                 <span class="sr-only">Facebook</span>
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -192,7 +206,7 @@
                         </li>
 
                         <li>
-                            <a href="/" rel="noopener noreferrer" target="_blank"
+                            <a href="https://www.instagram.com/dangerous_goods_management/" rel="noopener noreferrer" target="_blank"
                                 class="text-[#fffff2] transition hover:text-teal-500/75">
                                 <span class="sr-only">Instagram</span>
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -204,7 +218,7 @@
                         </li>
 
                         <li>
-                            <a href="/" rel="noopener noreferrer" target="_blank"
+                            <a href="https://twitter.com/dgm_new_york" rel="noopener noreferrer" target="_blank"
                                 class="text-[#fffff2] transition hover:text-teal-500/75">
                                 <span class="sr-only">Twitter</span>
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -215,28 +229,21 @@
                         </li>
 
                         <li>
-                            <a href="/" rel="noopener noreferrer" target="_blank"
+                            <a href="https://www.linkedin.com/company/aeromarineworld" rel="noopener noreferrer" target="_blank"
                                 class="text-[#fffff2] transition hover:text-teal-500/75">
-                                <span class="sr-only">GitHub</span>
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                        clip-rule="evenodd" />
+                                <span class="sr-only">LinkedIn</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                                    aria-hidden="true">
+                                    <path d="M20.447,20.452h-3.554V14.87c0-1.333-0.026-3.053-1.86-3.053c-1.863,0-2.148,1.454-2.148,2.956v5.679H9.333V9h3.415v1.561
+                                            h0.049c0.476-0.899,1.635-1.848,3.367-1.848c3.6,0,4.267,2.368,4.267,5.451V20.452z M5.337,7.433c-1.144,0-2.07-0.927-2.07-2.07
+                                            c0-1.144,0.926-2.07,2.07-2.07c1.143,0,2.07,0.926,2.07,2.07C7.407,6.506,6.48,7.433,5.337,7.433z M6.967,20.452H3.707V9h3.26
+                                            V20.452z M22.225,0H1.771C0.792,0,0,0.794,0,1.771v20.457C0,23.206,0.792,24,1.771,24h20.457C23.207,24,24,23.206,24,22.229V1.771
+                                            C24,0.794,23.207,0,22.225,0z" />
                                 </svg>
                             </a>
                         </li>
 
-                        <li>
-                            <a href="/" rel="noopener noreferrer" target="_blank"
-                                class="text-[#fffff2] transition hover:text-teal-500/75">
-                                <span class="sr-only">Dribbble</span>
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </a>
-                        </li>
+
                     </ul>
                 </div>
 
@@ -277,23 +284,23 @@
 
                     <div class="text-center sm:text-left">
                         <p class="text-lg font-medium text-white">Our Services</p>
-
                         <nav class="mt-8">
                             <ul class="space-y-4 text-sm">
                                 <li>
-                                    <a class="text-white transition hover:text-white/75" href="/">
+                                    <a class="text-white transition hover:text-white/75" href="./avaiation-spares.html">
                                         Aviation Spares
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a class="text-white transition hover:text-white/75" href="/">
+                                    <a class="text-white transition hover:text-white/75"
+                                        href="./avaiation-consumables.html">
                                         Aviation Consumables
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a class="text-white transition hover:text-white/75" href="/">
+                                    <a class="text-white transition hover:text-white/75" href="./custom-project.html">
                                         Custom Projects
                                     </a>
                                 </li>
@@ -325,19 +332,19 @@
                         <p class="text-lg font-medium text-white">Contact Us</p>
 
                         <ul class="mt-8 space-y-4 text-sm">
-                            <li>
-                                <a class="flex items-center justify-center sm:justify-start gap-1.5 group" href="/">
+                            <li class="">
+                                <a class="flex items-center justify-center sm:justify-start gap-1.5 group"
+                                    href="mailto:rfq@aeromarineworld.com">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white shrink-0"
                                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
-
-                                    <span class="text-white transition group-hover:text-white/75">
-                                        rfq@aeromarineworld.com
-                                    </span>
+                                    <span
+                                        class="text-white inline transition group-hover:text-white/75">rfq@aeromarineworld.com</span>
                                 </a>
                             </li>
+
 
                             <li>
                                 <a class="flex items-center justify-center sm:justify-start gap-1.5 group" href="/">
@@ -392,6 +399,20 @@
     </footer>
 
     <script src="./assets/form/js/form.js"></script>
+    <script>
+        e.preventDefault();
+
+        document.getElementById('menu-button').addEventListener('click', function () {
+            var menu = document.getElementById('menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.classList.add('block');
+            } else {
+                menu.classList.remove('block');
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
 </body>
 
 </html>
