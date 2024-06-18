@@ -17,6 +17,9 @@ inputs.forEach((input) => {
   input.addEventListener("blur", blurFunc);
 });
 
+// document.getElementById('form')
+//  .addEventListener('submit', function(event) {
+//    event.preventDefault();});
 
 function sendMail(event) {
   event.preventDefault();
