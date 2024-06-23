@@ -29,7 +29,7 @@ function sendMail(event) {
     message: document.getElementById("message").value,
     phone: document.getElementById("phone").value,
   };
-  emailjs.send("service_h8edw2d", "template_k5slpjp", parms).then(
+  emailjs.send("service_xdyzx3g", "template_oz9pdf4", parms).then(
     function (response) {
       console.log("SUCCESS!", response.status, response.text);
       alert("Message sent successfully");
