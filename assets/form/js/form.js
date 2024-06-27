@@ -24,10 +24,12 @@ inputs.forEach((input) => {
 function sendMail(event) {
   event.preventDefault();
   let parms = {
-    name: document.getElementById("name").value,
+    firstName: document.getElementById("firstName").value,
+    lastName: document.getElementById("lastName").value,
+    companyName: document.getElementById("companyName").value,
+    phone: document.getElementById("phone").value,
     email: document.getElementById("email").value,
     message: document.getElementById("message").value,
-    phone: document.getElementById("phone").value,
   };
   emailjs.send("service_h8edw2d", "template_k5slpjp", parms).then(
     function (response) {
